@@ -1,0 +1,32 @@
+<script src='./decimal.js'></script>
+<script src='./euclid.js'></script>
+<script src='./hexa.js'></script>
+<script src='./crypter.js'></script>
+<script src='./generate_keys.js'></script>
+<script>
+	
+function write(txt){
+document.write("<br>" + txt);
+}
+	
+
+	
+	document.write("Encrypted Message:");
+	document.write(encrypt_msg("Hello World!",public_key,nonce));
+	document.write("<br><br>");
+	document.write("Decrypted Message:");
+	document.write(decrypt_msg("3842 20867 5226 16107 23711 28155 12832 3927 11919 27132 6204 19278",private_key,nonce));
+	
+
+
+	</script>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
