@@ -61,6 +61,8 @@ pkey (Here you need your private key),
 nonce (Here you need your nonce)
 */
 ```
+## Requirements
+None.
 ## Contact
 Email: contact@chaepy.net \
 Website: https://chaepy.net/ 
