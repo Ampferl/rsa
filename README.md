@@ -1,4 +1,8 @@
-# RSA Encryption 
+# RSA Encryption
+This is a basic RSA en-/decryption. (Soon there will be a function to automatically calculate the keys and the RSA-module) \
+\
+I used the JavaScript library *[DecimalJS](https://github.com/MikeMcl/decimal.js/)* to count on numbers in the 1e+5000 area.\
+A demo is available here: https://chaepy.github.io/rsa/
 ## How it works
 We have to choose to prime numbers. \
 For example we will use `p=11` and `q=13`.
