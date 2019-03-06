@@ -1,31 +1,58 @@
-<script src='./decimal.js'></script>
-<script src='./euclid.js'></script>
-<script src='./hexa.js'></script>
-<script src='./crypter.js'></script>
-<script src='./generate_keys.js'></script>
-<script>
+<html>
+<head>
+	<title>Basic RSA En-/Decryption</title>
+</head>
+<body>
+	<h1>Basic RSA En-/Decryption</h1>
 	
-function write(txt){
-document.write("<br>" + txt);
-}
+		<h3>Message:</h3>
+			<value id="msg">Hello World</value>
+			
 	
-	write("Basic RSA En-/Decryption");
-	write("Encrypted Message:");
-	write(encrypt_msg("Hello World!",public_key,nonce));
-	write("");
-	write("Decrypted Message:");
-	write(decrypt_msg("3842 20867 5226 16107 23711 28155 12832 3927 11919 27132 6204 19278",private_key,nonce));
-	write("<br><br><br><br><i>&copy; 2019 <a href='https://chaepy.net/'>Chaepy</a> - <a href='https://github.com/Chaepy/'>Github</a> - <a href='https://twitter.com/ChaepyDev'>Twitter</a></i>");
+		<h3>Encrypted Message:</h3>
+			<value id="encrypt_msg">Loading...</value>
+			
+		<h3>Decrypted Message:</h3>
+			<value id="decrypt_msg">Loading...</value>
+			
+		<h3>Public Key:</h3>
+			<value id="public_key">Loading...</value>
+			
+		<h3>Private Key:</h3>
+			<value id="private_key">Loading...</value>
+			
+	<footer style="margin-top:50px;">&copy; 2019 <a href='https://chaepy.net/'>Chaepy</a> - <a href='https://github.com/Chaepy/'>Github</a> - <a href='https://twitter.com/ChaepyDev'>Twitter</a></footer>
 	
-
-
-</script>
+	<script src='./decimal.js'></script>
+	<script src='./euclid.js'></script>
+	<script src='./hexa.js'></script>
+	<script src='./crypter.js'></script>
+	<script src='./generate_keys.js'></script>
+	<script>
 	
-
-	
-	
-	
-	
+		// Encrypt the Message: Hello World!
+		var enc = document.getElementById('encrypt_msg');
+		var enc_msg = encrypt_msg("Hello World!",public_key,nonce);
+		enc.innerHTML = enc_msg;
+		
+		// Decrypt the Message: 24938 12809 24590 5614 3927 2726 26573 15147 4289 27132 17166 14051
+		var dec = document.getElementById('decrypt_msg');
+		var dec_msg = decrypt_msg("24938 12809 24590 5614 3927 2726 26573 15147 4289 27132 17166 14051",private_key,nonce);
+		dec.innerHTML = dec_msg;
+		
+		// Show the Public Key
+		var pub = document.getElementById('public_key');
+		pub.innerHTML = get_publickey()+", "+get_rsamodule();
+		
+		// Show the Private Key
+		var prv = document.getElementById('private_key');
+		prv.innerHTML = get_privatekey()+", "+get_rsamodule();
+		
+		
+		
+	</script>
+</body>
+</html>
 	
 	
 	

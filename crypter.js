@@ -53,9 +53,13 @@ function decrypt_msg(msg,pkey,nonced){
 }
 	
 function get_privatekey(){
-	document.write("<br>Private Key: " + private_key);
+	return private_key;
 }
 
 function get_publickey(){
-	document.write("<br>Public Key: " + public_key);
+	return public_key;
+}
+
+function get_rsamodule(){
+	return nonce;
 }

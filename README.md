@@ -40,6 +40,7 @@ Example:\
 ## Quick Guide
 Show your RSA public_key: `get_publickey();` \
 Show your RSA private_key: `get_privatekey();`\
+Show your RSA-Module: `get_rsamodule();`\
 \
 Encrypt a message:
 ```
