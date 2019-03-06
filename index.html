@@ -9,17 +9,17 @@ function write(txt){
 document.write("<br>" + txt);
 }
 	
-
+	write("Basic RSA En-/Decryption");
+	write("Encrypted Message:");
+	write(encrypt_msg("Hello World!",public_key,nonce));
+	write("");
+	write("Decrypted Message:");
+	write(decrypt_msg("3842 20867 5226 16107 23711 28155 12832 3927 11919 27132 6204 19278",private_key,nonce));
+	write("<br><br><br><br><i>&copy; 2019 <a href='https://chaepy.net/'>Chaepy</a> - <a href='https://github.com/Chaepy/'>Github</a> - <a href='https://twitter.com/ChaepyDev'>Twitter</a></i>");
 	
-	document.write("Encrypted Message:");
-	document.write(encrypt_msg("Hello World!",public_key,nonce));
-	document.write("<br><br>");
-	document.write("Decrypted Message:");
-	document.write(decrypt_msg("3842 20867 5226 16107 23711 28155 12832 3927 11919 27132 6204 19278",private_key,nonce));
-	
 
 
-	</script>
+</script>
 	
 
 	
