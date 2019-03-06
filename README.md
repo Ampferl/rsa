@@ -34,8 +34,8 @@ Calculation:\
 Example:\
 `7 = 28^23 (mod 143)`
 ## Quick Guide
-Show your RSA public_key: get_publickey();´ \
-Show your RSA private_key: get_privatekey();´\
+Show your RSA public_key: `get_publickey();` \
+Show your RSA private_key: `get_privatekey();`\
 \
 Encrypt a message:
 ```
@@ -56,4 +56,7 @@ pkey (Here you need your private key),
 nonce (Here you need your nonce)
 */
 ```
+## Contact
+Email: contact@chaepy.net \
+Website: https://chaepy.net/ 
 
