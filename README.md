@@ -63,6 +63,11 @@ nonce (Here you need your nonce)
 ```
 ## Requirements
 None.
+
+## Resources
+- [Wikipedia/RSA](https://www.wikiwand.com/de/RSA-Kryptosystem)
+- [Cryptographie Tutorials by Morpheus Tutorials](https://www.youtube.com/watch?v=-nK32SkZdgY&list=PLNmsVeXQZj7pWwFv5APk240hrehtCJae-)
+
 ## Contact
 Email: contact@chaepy.net \
 Website: https://chaepy.net/ 
